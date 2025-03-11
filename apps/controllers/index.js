@@ -6,6 +6,10 @@ router.use("/admin", require(__dirname + "/admin/admincontroller"));
 // Trang chính
 router.get("/", function(req, res) {
     res.render("index.ejs");
+
+});
+router.get("/tien", function(req,res){
+    res.render("tien.ejs");
 });
 
 // Trang của Sơn
