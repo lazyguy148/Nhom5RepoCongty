@@ -5,4 +5,7 @@ router.use("/admin", require(__dirname + "/admin/admincontroller"));
 router.get("/", function(req,res){
     res.render("index.ejs");
 });
+router.get("/thuat", function(req,res){
+    res.render("thuat.ejs");
+});
 module.exports = router;
